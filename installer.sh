@@ -1,6 +1,6 @@
                #!/usr/bin/env bash
 
-# This is an experimental installer script for System Remote-Control
+# This is an experimental installer script for Discover-IT-LLC-Mirror Remote-Control
 
 echo ""
 echo -e "    -------------- Installation in progress --------------\033[0m"
@@ -76,8 +76,8 @@ else
         # found it again
         echo -n ""
     else
-        echo "Could not find System installation directory."
-        echo "Please start this script again from the System directory."
+        echo "Could not find Discover-IT-LLC-Mirror installation directory."
+        echo "Please start this script again from the MagicMirror directory."
         exit 1
     fi
 fi
@@ -128,7 +128,7 @@ if [ -d "$MM_HOME/modules/$MODULE_NAME" ] ; then
         echo "Already installed, not upgrading."
     fi
 else
-    echo "System detected in: $MM_HOME"
+    echo "Discover-IT-LLC-Mirror detected in: $MM_HOME"
     echo ""
     if check_yes "Is this correct and do you want to start installation?"; then
             echo ""
@@ -171,15 +171,9 @@ else
     fi
 fi
 
-# Get an UUID to use as an API key
-NODE_BIN=$(which node)
-APIKEY=$($NODE_BIN -e 'console.log(require("uuid/v4")().replace(/-/g, ""));');
-
 echo ""
 if check_no "Do you want to view instructions on how to configure the module?"; then
     echo "(1) Please add the following snippet into your modules array in your config.js:"
-    echo -e "\033[33m    -------------- copy below this line --------------"
-    echo -e "    -------------- copy above this line --------------\033[0m"
     echo ""
 echo ' ______                        __                __  __                  __ '
 echo '|      \                      |  \              |  \|  \                |  \'
@@ -202,16 +196,12 @@ echo ""
     fi
 else
     echo ""
-    echo -e "\033[31mYou should also set an API key in your config section!\033[0m"
-    echo "  It's dangerous to go alone! Take this. "
-    echo -e "\033[31m  apiKey: '$APIKEY'\033[0m"
-    echo "  I made it just for you."
     echo ""
 fi
 echo "Have fun with the module, if you have any problems, please search for help on github or in the forum:"
 echo ""
 echo "   Github : https://github.com/$FORK/$MODULE_NAME"
 echo ""
-echo "Do not forget to restart your System to activate the module! Installation finished."
+echo "Do not forget to restart your Discover-IT-LLC-Mirror to activate the module! Installation finished."
 echo ""
 exit 0
