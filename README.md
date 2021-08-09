@@ -40,7 +40,6 @@ npm install
 Add the module to the modules array in the `config/config.js` file:
 
 ```javascript
-modules: [
   {
     module: 'MMM-BackgroundSlideshow',
     position: 'fullscreen_below',
@@ -49,8 +48,7 @@ modules: [
       transitionImages: true,
       randomizeImageOrder: true
     }
-  }
-];
+  },
 ```
 
 I also recommend adding the following to the custom.css to make the text a little brighter:
