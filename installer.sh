@@ -155,23 +155,6 @@ else
             fi
             cd $MODULE_NAME
 
-            echo ""
-            echo "Installing dependencies..."
-            echo ""
-            npm install
-            if [ $? -ne 0 ]; then
-                echo "Failed to install dependencies."
-                exit 1;
-            fi
-            echo "Done."
-            echo ""
-            echo "Installation finished."
-    else
-        echo "Installation skipped."
-    fi
-fi
-
-
 
 echo ""
 if check_no "Do you want to view instructions on how to configure the module?"; then
