@@ -56,7 +56,7 @@ fi
 # assume default install location
 MM_HOME=$HOME/MagicMirror
 MODULE_NAME=MMM-BackgroundSlideshow
-FORK=Jopyth
+FORK=DiscoverITLLC
 
 # check if we are correct by searching for https://github.com/DiscoverITLLC/MagicMirror in package.json
 TEST_STRING="\"url\": \"git+https://github.com/DiscoverITLLC/MagicMirror.git\""
