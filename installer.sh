@@ -1,10 +1,8 @@
-               #!/usr/bin/env bash
+#!/usr/bin/env bash
 
-# This is an experimental installer script for System Remote-Control
+# This is an experimental installer script for DiscoverITLLC2 Remote-Control
 
 echo ""
-echo -e "    -------------- Installation in progress --------------\033[0m"
-echo "" 
 echo ' ______                        __                __  __ '
 echo '|      \                      |  \              |  \|  \'
 echo ' \$$$$$$ _______    _______  _| $$_     ______  | $$| $$'
@@ -26,13 +24,9 @@ echo ' \$$$$$$$  _\$$$$$$$ \$$$$$$$     \$$$$   \$$$$$$$ \$$  \$$  \$$'
 echo '          |  \__| $$                                            '
 echo '           \$$    $$                                            '
 echo '            \$$$$$$                                             '
+echo "Installation for the DiscoverITLLC2 Remote-Control module started!"
 echo ""
-echo ""
-echo " 𝕀𝕟𝕤𝕥𝕒𝕝𝕝𝕒𝕥𝕚𝕠𝕟 𝕗𝕠𝕣 𝕥𝕙𝕖 𝔻𝕚𝕤𝕔𝕠𝕧𝕖𝕣-𝕀𝕋-𝕃𝕃ℂ-𝕄𝕚𝕣𝕣𝕠𝕣 𝕞𝕠𝕕𝕦𝕝𝕖 𝕤𝕥𝕒𝕣𝕥𝕖𝕕!"
-echo "𝑊𝑎𝑟𝑛𝑖𝑛𝑔: ⚠⚠𝑇ℎ𝑖𝑠  𝑠𝑐𝑟𝑖𝑝𝑡 𝑎𝑛𝑑 𝑖𝑛𝑠𝑡𝑎𝑙𝑙𝑒𝑑 𝑠𝑜𝑓𝑡𝑤𝑎𝑟𝑒 𝑎𝑟𝑒 𝑝𝑟𝑜𝑣𝑖𝑑𝑒𝑑"
-echo "𝑎𝑠 𝑠𝑢𝑐ℎ"
-echo "𝑤𝑖𝑡ℎ𝑜𝑢𝑡 𝑤𝑎𝑟𝑟𝑎𝑛𝑡𝑦 𝑜𝑓 𝑎𝑛𝑦 𝑘𝑖𝑛𝑑, 𝑒𝑥𝑝𝑟𝑒𝑠𝑠 𝑜𝑟 𝑖𝑚𝑝𝑙𝑖𝑐𝑖𝑡, 𝑖𝑛𝑐𝑙𝑢𝑑𝑖𝑛𝑔, 𝑎𝑚𝑜𝑛𝑔 𝑜𝑡ℎ𝑒𝑟𝑠, 𝑚𝑎𝑟𝑘𝑒𝑡𝑖𝑛𝑔 𝑔𝑢𝑎𝑟𝑎𝑛𝑡𝑒𝑒𝑠, 𝑎𝑝𝑡𝑖𝑡𝑢𝑑𝑒 𝑓𝑜𝑟 𝑎 𝑝𝑢𝑟𝑝𝑜𝑠𝑒 𝑎𝑛𝑑 𝑙𝑎𝑐𝑘 𝑜𝑓 𝑡𝑟𝑎𝑖𝑛𝑖𝑛𝑔 𝑖𝑛 𝑝𝑎𝑟𝑡𝑖𝑐𝑢𝑙𝑎𝑟. 𝐼𝑛 𝑛𝑜 𝑐𝑎𝑠𝑒, 𝑎𝑢𝑡ℎ𝑜𝑟𝑠 𝑜𝑟 𝑐𝑜𝑝𝑦𝑟𝑖𝑔ℎ𝑡 ℎ𝑜𝑙𝑑𝑒𝑟𝑠 𝑤𝑖𝑙𝑙 𝑏𝑒 𝑟𝑒𝑠𝑝𝑜𝑛𝑠𝑖𝑏𝑙𝑒 𝑓𝑜𝑟 𝑎𝑛𝑦 𝑐𝑙𝑎𝑖𝑚, 𝑑𝑎𝑚𝑎𝑔𝑒 𝑜𝑟 𝑜𝑡ℎ𝑒𝑟 𝑟𝑒𝑠𝑝𝑜𝑛𝑠𝑖𝑏𝑖𝑙𝑖𝑡𝑦, 𝑒𝑖𝑡ℎ𝑒𝑟 𝑖𝑛 𝑎 𝑐𝑜𝑛𝑡𝑟𝑎𝑐𝑡 𝑎𝑐𝑡𝑖𝑜𝑛, 𝑔𝑟𝑖𝑒𝑣𝑎𝑛𝑐𝑒 𝑜𝑟 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒, 𝑡ℎ𝑎𝑡 𝑎𝑟𝑖𝑠𝑒𝑠 𝑓𝑟𝑜𝑚, 𝑜𝑢𝑡 𝑜𝑓 𝑜𝑟 𝑖𝑛 𝑟𝑒𝑙𝑎𝑡𝑖𝑜𝑛 𝑡𝑜 𝑡ℎ𝑒 𝑆𝑜𝑓𝑡𝑤𝑎𝑟𝑒 𝑜𝑟 𝑢𝑠𝑒 𝑜𝑟 𝑜𝑡ℎ𝑒𝑟 𝑑𝑒𝑎𝑙𝑖𝑛𝑔𝑠 𝑖𝑛 𝑡ℎ𝑒 𝑠𝑜𝑓𝑡𝑤𝑎𝑟𝑒.⚠⚠"
-echo ""
+echo "Notice: This script and the installed software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software."
 echo ""
 
 check_yes() {
@@ -62,7 +56,7 @@ fi
 # assume default install location
 MM_HOME=$HOME/MagicMirror
 MODULE_NAME=MMM-BackgroundSlideshow
-FORK=DiscoverITLLC
+FORK=Jopyth
 
 # check if we are correct by searching for https://github.com/DiscoverITLLC/MagicMirror in package.json
 TEST_STRING="\"url\": \"git+https://github.com/DiscoverITLLC/MagicMirror.git\""
@@ -76,8 +70,8 @@ else
         # found it again
         echo -n ""
     else
-        echo "Could not find System installation directory."
-        echo "Please start this script again from the System directory."
+        echo "Could not find DiscoverITLLC2 installation directory."
+        echo "Please start this script again from the DiscoverITLLC directory."
         exit 1
     fi
 fi
@@ -128,7 +122,7 @@ if [ -d "$MM_HOME/modules/$MODULE_NAME" ] ; then
         echo "Already installed, not upgrading."
     fi
 else
-    echo "System detected in: $MM_HOME"
+    echo "DiscoverITLLC2 detected in: $MM_HOME"
     echo ""
     if check_yes "Is this correct and do you want to start installation?"; then
             echo ""
@@ -155,14 +149,55 @@ else
             fi
             cd $MODULE_NAME
 
+            echo ""
+            echo "Installing dependencies..."
+            echo ""
+            npm install
+            if [ $? -ne 0 ]; then
+                echo "Failed to install dependencies."
+                exit 1;
+            fi
+            echo "Done."
+            echo ""
+            echo "Installation finished."
+    else
+        echo "Installation skipped."
+    fi
+fi
+
+# Get an UUID to use as an API key
+NODE_BIN=$(which node)
+APIKEY=$($NODE_BIN -e 'console.log(require("uuid/v4")().replace(/-/g, ""));');
 
 echo ""
 if check_no "Do you want to view instructions on how to configure the module?"; then
     echo "(1) Please add the following snippet into your modules array in your config.js:"
     echo -e "\033[33m    -------------- copy below this line --------------"
+    echo -e "    {"
+    echo -e "        module: '$MODULE_NAME'",
+    echo -e "        // uncomment the following line to show the URL of the remote control on the mirror"
+    echo -e "        // position: 'bottom_left'",
+    echo -e "        // you can hide this module afterwards from the remote control itself"
+    echo -e "        config: {"
+    echo -e "\033[31m            apiKey: '$APIKEY'\033[33m"
+    echo -e "        }"
+    echo -e "    },"
     echo -e "    -------------- copy above this line --------------\033[0m"
     echo ""
-echo ' ______                        __                __  __                  __ '
+    echo "(2) Also you will need to change the address at which the server listens:"
+    echo "    Search for the following line in  your config.js:"
+    echo "            address: \"localhost\","
+    echo "    and change it to allow any device to contact your Mirror:"
+    echo "            address: \"0.0.0.0\","
+    echo ""
+    echo "(3) Make sure to add the IPs of your devices from which you want to access the Remote Control to the ipWhitelist array."
+    echo "    If for example have a phone with the IP address 192.168.0.50 search for the following line:"
+    echo "            ipWhitelist: [\"127.0.0.1\", \"::ffff:127.0.0.1\", \"::1\"],"
+    echo "    and add your IP to the list:"
+    echo "            ipWhitelist: [\"127.0.0.1\", \"::ffff:127.0.0.1\", \"::1\", \"::ffff:192.168.0.50\"],"
+    echo "    Alternatively, you can also add multiple devices with IPs such as 192.168.0.XXX:"
+    echo "            ipWhitelist: [\"127.0.0.1\", \"::ffff:127.0.0.1\", \"::1\", \"::ffff:192.168.0.1/120\", \"192.168.0.1/24\"],"
+    echo ' ______                        __                __  __                  __ '
 echo '|      \                      |  \              |  \|  \                |  \'
 echo ' \$$$$$$ _______    _______  _| $$_     ______  | $$| $$  ______    ____| $$'
 echo '  | $$  |       \  /       \|   $$ \   |      \ | $$| $$ /      \  /      $$'
@@ -170,8 +205,7 @@ echo '  | $$  | $$$$$$$\|  $$$$$$$ \$$$$$$    \$$$$$$\| $$| $$|  $$$$$$\|  $$$$$
 echo '  | $$  | $$  | $$ \$$    \   | $$ __  /      $$| $$| $$| $$    $$| $$  | $$'
 echo ' _| $$_ | $$  | $$ _\$$$$$$\  | $$|  \|  $$$$$$$| $$| $$| $$$$$$$$| $$__| $$'
 echo '|   $$ \| $$  | $$|       $$   \$$  $$ \$$    $$| $$| $$ \$$     \ \$$    $$'
-echo ' \$$$$$$ \$$   \$$ \$$$$$$$     \$$$$   \$$$$$$$ \$$ \$$  \$$$$$$$  \$$$$$$$' 
-echo "" 
+echo ' \$$$$$$ \$$   \$$ \$$$$$$$     \$$$$   \$$$$$$$ \$$ \$$  \$$$$$$$  \$$$$$$$'
     echo ""
 
     if check_no "Got it?"; then
@@ -183,14 +217,17 @@ echo ""
     fi
 else
     echo ""
+    echo -e "\033[31mYou should also set an API key in your config section!\033[0m"
+    echo "  It's dangerous to go alone! Take this. "
+    echo -e "\033[31m  apiKey: '$APIKEY'\033[0m"
     echo "  I made it just for you."
     echo ""
 fi
 echo "Have fun with the module, if you have any problems, please search for help on github or in the forum:"
 echo ""
 echo "   Github : https://github.com/$FORK/$MODULE_NAME"
-echo "   Forum  : "
+echo "   Forum  : http://forum.DiscoverITLLC.builders"
 echo ""
-echo "Do not forget to restart your System to activate the module! Installation finished."
+echo "Do not forget to restart your DiscoverITLLC2 to activate the module! Installation finished."
 echo ""
 exit 0
